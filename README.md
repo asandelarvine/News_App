@@ -1,4 +1,4 @@
-# password_locker.
+# News_App
 
 ### LIST OF CONTRIBUTORS
 
