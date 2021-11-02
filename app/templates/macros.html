@@ -1,9 +1,9 @@
 {% macro displaySourceList(source_list) %}
         {% for source in source_list %}
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 block" >
-                <h4 style="color: rgb(73, 240, 212);">{{ source.name}}</h4>
+                <h4 style="color: #004d99;">{{ source.name}}</h4>
                 <p>{{source.description}}</p>
-                <a href="/articles/{{source.id}}" class="btn btn-info btn-sm">More on {{source.name}}</a>
+                <a href="/articles/{{source.id}}" class="btn btn-info btn-sm" style="color: black;" >More on {{source.name}}</a>
             </div>
         {% endfor %}
 {% endmacro %}
@@ -13,10 +13,10 @@
         {% if article.image %}
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="padding-bottom: 10px;">
             <img class="img-responsive" src="{{article.image}}" alt="image">
-            <h4 style="color: rgb(28, 245, 227);">{{article.title}}</h4>
+            <h4 style="color: crimson;">{{article.title}}</h4>
             <p>{{article.description}}</p>
             <p>Created: {{article.publishedAt}}</p>
-            <a href="{{article.url}}" class="btn btn-info btn-sm">Read Full Story</a>
+            <a href="{{article.url}}" class="btn btn-info btn-sm" style="color:#004d99" >Read Full Story</a>
         </div>
         {% endif %}
     {% endfor %}

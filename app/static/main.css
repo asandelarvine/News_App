@@ -9,16 +9,6 @@
     }
   }
 
-  #head{
-    background-image: url("./images/img.webp");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    height: 50vh;
-  }
+  
 
   
