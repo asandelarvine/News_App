@@ -1,0 +1,14 @@
+News_App
+
+## Specs
+
+The program lets a user pick a source from the various categories
+* Example input: BBC News
+* Example output: displays news from BBC News only
+
+The program redirects the user to the News article's source site for the full story
+* Example input: Read More
+* Example output: Redirects to the article source site
+© 2021 GitHub, Inc.
+Terms
+Privacy
