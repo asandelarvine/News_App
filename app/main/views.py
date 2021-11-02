@@ -24,4 +24,4 @@ def articles(source):
     '''
     articles = get_articles(source)
 
-    return render_template('article.html', articles = articles)
+    return render_template('articles.html', articles = articles)

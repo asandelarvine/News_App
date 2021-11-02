@@ -1,50 +1,54 @@
 
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 {% import 'macros.html' as macro %}
 
 <!-- Styles block -->
 
-<!-- {% block styles%}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-{% endblock %} -->
-
     <!-- Content block -->
-    {% block content%}
-    <div class="container" style="background-color: white;">
+{% block content %}
+
+    <div id="head" class="bg">
+        <div class="overlay" >
+            <br>
+            <h1 style="color: crimson; text-align: center; font: size 12px;" >News</h1>
+            <h2 style="text-align: center;" >Get upto date with the latest trending news, Political news and Business news</h2>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: rgb(14, 13, 13);">
        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 50px;">
             <!-- General News -->
-            <h3 style="color: blue;">General News Sources</h3>
+            <h3 style="color: rgb(21, 255, 0);">General News Sources</h3>
             <hr>
-            <div class="is-flex" style="display: flex; flex-wrap: wrap;">
+            <div class="is-flex" style="display: flex; flex-wrap: wrap; color: beige;">
                 {{macro.displaySourceList(general)}}
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 50px;">
             <!-- Business News -->
-            <h3 style="color: blue;">Business News Sources</h3>
+            <h3 style="color: rgb(0, 255, 34);">Business News Sources</h3>
             <hr>
-            <div class="is-flex" style="display: flex; flex-wrap: wrap;">
+            <div class="is-flex" style="display: flex; flex-wrap: wrap; color: white">
                 {{macro.displaySourceList(business)}}
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 50px;">
             <!-- Technology News -->
-            <h3 style="color: blue;">Technology News Sources</h3>
+            <h3 style="color: rgb(0, 255, 0);">Technology News Sources</h3>
             <hr>
-            <div class="is-flex" style="display: flex; flex-wrap: wrap;" >
+            <div class="is-flex" style="display: flex; flex-wrap: wrap; color:whitesmoke" >
                 {{macro.displaySourceList(technology)}}
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"style="padding-bottom: 50px;">
             <!-- Sports News -->
-            <h3 style="color: blue;">Sports News Sources</h3>
+            <h3 style="color: rgb(60, 255, 0);">Sports News Sources</h3>
             <hr>
-            <div class="is-flex" style="display: flex; flex-wrap: wrap;">
+            <div class="is-flex" style="display: flex; flex-wrap: wrap; color:antiquewhite">
                     {{macro.displaySourceList(sports)}}
             </div>
 
@@ -55,7 +59,7 @@
     <footer class="page-footer font-small bg-dark pt-4">
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <div class="footer-copyright text-center py-3" style="color:rgb(60, 255, 0) ;">© 2021 Copyright:
           <a href="https://github.com/asandelarvine"> Asande Larvine</a>
         </div>
         <!-- Copyright -->
@@ -65,4 +69,5 @@
 
       
     </div>
-    {% endblock%}
+
+    {% endblock %}
